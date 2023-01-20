@@ -1,0 +1,13 @@
+print("Enter a number")
+n = int(input())
+
+
+def factorial(n):
+    if n < 0:
+        return "Factorial does not exist"
+    elif n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print("The factorial number of the number is", factorial(n))
